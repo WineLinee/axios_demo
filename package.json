@@ -1,0 +1,13 @@
+{
+  "name": "notebook",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run axios_demo\"",
+    "server": "cd server && node index.js",
+    "axios_demo": "cd axios_demo && npm run serve",
+    "build": "cd axios_demo && npm run build"
+  },
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
